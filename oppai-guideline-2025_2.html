@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oppai Guideline 2025 | 日本おっぱい学会</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Shippori+Mincho:wght@400;700;800&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ff4d8d;
+    --pink-light: #ff7eb3;
+    --pink-pale: #fff0f5;
+    --peach: #ffb5a7;
+    --cream: #fef3e2;
+    --skin: #ffe5d4;
+    --navy: #1a2744;
+    --blue: #4a90d9;
+    --gold: #ffc107;
+    --red: #e53935;
+    --bg: #fffaf5;
+    --text: #2c2020;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.85;
+    overflow-x: hidden;
+  }
+
+  .ticker {
+    background: var(--navy);
+    color: var(--gold);
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .ticker-inner {
+    display: inline-block;
+    animation: scroll-ticker 30s linear infinite;
+  }
+  @keyframes scroll-ticker {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-200%); }
+  }
+
+  .header {
+    background: white;
+    border-bottom: 4px solid var(--pink);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(255,77,141,0.1);
+  }
+  .logo-mark {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--pink), var(--pink-light));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(255,77,141,0.3);
+    animation: logo-bounce 3s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes logo-bounce {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+  .logo-text { line-height: 1.3; }
+  .logo-text .main { font-family: 'Dela Gothic One', cursive; font-size: 18px; color: var(--pink); }
+  .logo-text .sub { font-size: 10px; color: #999; letter-spacing: 0.1em; }
+  .header-nav { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+  .header-nav a {
+    font-size: 11.5px; font-weight: 700; color: var(--text);
+    text-decoration: none; padding: 6px 12px; border-radius: 20px;
+    transition: all 0.2s;
+  }
+  .header-nav a:hover { background: var(--pink); color: white; }
+
+  .hero {
+    background: linear-gradient(160deg, var(--pink-pale) 0%, var(--cream) 40%, var(--skin) 100%);
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before, .hero::after {
+    content: '( . Y . )';
+    position: absolute;
+    font-size: 120px;
+    opacity: 0.04;
+    font-weight: 900;
+    color: var(--pink);
+    pointer-events: none;
+  }
+  .hero::before { top: -20px; left: -40px; transform: rotate(-15deg); }
+  .hero::after { bottom: -30px; right: -40px; transform: rotate(10deg); }
+  .hero-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-size: 12px; font-weight: 900;
+    padding: 4px 18px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+  .hero h2 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: clamp(32px, 7vw, 56px);
+    background: linear-gradient(135deg, var(--pink), #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .hero-subtitle {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .hero-ascii {
+    font-size: clamp(40px, 10vw, 80px);
+    line-height: 1;
+    margin: 16px 0;
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+  }
+  .hero-tagline {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--pink);
+    margin-bottom: 20px;
+  }
+  .hero-meta {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    font-size: 11px; color: #aaa;
+  }
+  .hero-meta span { background: white; padding: 4px 12px; border-radius: 14px; }
+
+  .disclaimer-bar {
+    background: #fffde7;
+    border: 2px dashed var(--gold);
+    max-width: 700px;
+    margin: 28px auto 0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+  }
+  .disclaimer-bar strong { color: var(--red); }
+
+  .section {
+    margin: 36px auto;
+    max-width: 820px;
+    padding: 0 20px;
+  }
+  .section-tag {
+    display: inline-block;
+    background: var(--pink);
+    color: white;
+    font-size: 11px; font-weight: 900;
+    padding: 3px 14px;
+    border-radius: 14px;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: var(--navy);
+  }
+  .section-lead { font-size: 13px; color: #888; margin-bottom: 20px; }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    border: 1px solid #f0e0e0;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--pink), var(--peach), var(--gold));
+  }
+
+  .cq {
+    background: linear-gradient(135deg, #fff5f8, #fff);
+    border: 2px solid var(--pink-light);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+    position: relative;
+  }
+  .cq-num {
+    position: absolute;
+    top: -14px; left: 20px;
+    background: var(--pink);
+    color: white;
+    font-size: 12px; font-weight: 900;
+    padding: 4px 16px;
+    border-radius: 12px;
+  }
+  .cq-question {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 17px; font-weight: 800;
+    color: var(--navy);
+    margin: 8px 0 16px;
+    line-height: 1.6;
+  }
+  .answer-box {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    border-left: 5px solid var(--pink);
+    margin: 12px 0;
+  }
+  .answer-label {
+    font-size: 10px; font-weight: 900; letter-spacing: 0.15em;
+    color: var(--pink);
+    margin-bottom: 4px;
+  }
+  .answer-text { font-size: 14.5px; font-weight: 700; }
+  .evidence-pill {
+    display: inline-block;
+    font-size: 10px; font-weight: 900;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+  .ev-a { background: #fce4ec; color: var(--red); }
+  .ev-b { background: #fff3e0; color: #e65100; }
+  .ev-c { background: #e8f5e9; color: #2e7d32; }
+  .ev-d { background: #e8eaf6; color: #3949ab; }
+
+  .vote-bar-wrap { margin: 14px 0 4px; }
+  .vote-bar-label { font-size: 11px; color: #999; margin-bottom: 4px; }
+  .vote-bar {
+    display: flex; height: 30px; border-radius: 8px; overflow: hidden;
+    font-size: 11px; font-weight: 900; color: white;
+  }
+  .vote-bar > div { display:flex; align-items:center; justify-content:center; }
+  .vb-yes { background: var(--pink); }
+  .vb-no { background: #78909c; }
+  .vb-abs { background: #cfd8dc; color: #78909c; }
+
+  .note { font-size: 11px; color: #aaa; font-style: italic; margin-top: 4px; }
+  .note-red { font-size: 12px; color: var(--red); font-weight: 700; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, var(--cream), var(--pink-pale));
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+    text-align: center;
+  }
+  .highlight-box .big-emoji { font-size: 48px; margin-bottom: 8px; }
+  .highlight-box .big-text {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 22px; color: var(--pink);
+    margin-bottom: 6px;
+  }
+
+  .fun-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+    margin: 16px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #f0e0e0;
+  }
+  .fun-table th {
+    background: var(--pink);
+    color: white;
+    padding: 12px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    text-align: left;
+  }
+  .fun-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #fce4ec;
+  }
+  .fun-table tr:last-child td { border-bottom: none; }
+  .fun-table tr:nth-child(even) { background: #fffaf5; }
+  .fun-table tr:hover { background: #fff0f5; }
+  .fun-table .danger-row { background: #fff5f5 !important; }
+  .fun-table .death-row { background: #fce4ec !important; }
+
+  .flow-wrap {
+    background: white;
+    border: 2px dashed var(--peach);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .flow-wrap h4 { font-size: 13px; color: var(--pink); margin-bottom: 16px; font-weight: 900; }
+  .flow-step {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 13px; font-weight: 700;
+    margin: 4px;
+  }
+  .fs-start { background: var(--pink); color: white; }
+  .fs-check { background: #fff3e0; border: 2px solid #ffb74d; color: #e65100; }
+  .fs-do { background: #e3f2fd; border: 2px solid #90caf9; color: #1565c0; }
+  .fs-end { background: #e8f5e9; border: 2px solid #81c784; color: #2e7d32; }
+  .fs-danger { background: #fce4ec; border: 2px solid #f48fb1; color: var(--red); }
+  .flow-arrow { display: block; font-size: 22px; color: #ccc; margin: 2px 0; }
+
+  .column {
+    background: linear-gradient(135deg, #f8f4ff, #fff8f0);
+    border: 1px solid #e0d4f0;
+    border-radius: 16px;
+    padding: 22px;
+    margin: 20px 0;
+  }
+  .column-head {
+    font-size: 14px; font-weight: 900; color: #7b1fa2;
+    margin-bottom: 8px;
+  }
+  .column p { font-size: 13px; }
+
+  .warning-box {
+    background: #fff5f5;
+    border: 2px solid var(--red);
+    border-radius: 16px;
+    padding: 22px;
+    margin: 20px 0;
+  }
+  .warning-box .wb-title {
+    font-weight: 900;
+    color: var(--red);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .bar-chart { display: flex; align-items: flex-end; gap: 12px; justify-content: center; height: 180px; margin: 20px 0; }
+  .bar-col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .bar {
+    width: 52px;
+    border-radius: 10px 10px 4px 4px;
+    transition: height 0.8s ease;
+  }
+  .bar-val { font-size: 12px; font-weight: 900; color: var(--pink); }
+  .bar-label { font-size: 11px; color: #999; font-weight: 700; text-align: center; }
+
+  .counter-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .counter-box {
+    background: white;
+    border: 2px solid var(--pink-light);
+    border-radius: 14px;
+    padding: 18px 12px;
+    text-align: center;
+  }
+  .counter-num {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 32px;
+    color: var(--pink);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .counter-label { font-size: 11px; color: #999; font-weight: 700; }
+
+  .kinki-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .kinki-item {
+    background: white;
+    border: 2px solid #fce4ec;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .kinki-item .ki-icon { font-size: 28px; flex-shrink: 0; }
+  .kinki-item.death { border-color: var(--red); background: #fff5f5; }
+
+  .quiz-box {
+    background: linear-gradient(135deg, #e3f2fd, #fff);
+    border: 2px solid var(--blue);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+    text-align: center;
+  }
+  .quiz-box h4 { color: var(--blue); font-size: 14px; margin-bottom: 12px; }
+  .quiz-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 12px 0; }
+  .quiz-btn {
+    background: white;
+    border: 2px solid var(--blue);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .quiz-btn:hover { background: var(--blue); color: white; transform: scale(1.05); }
+  .quiz-btn.correct { background: #4caf50; color: white; border-color: #4caf50; }
+  .quiz-btn.wrong { background: #e53935; color: white; border-color: #e53935; }
+  .quiz-result {
+    font-size: 14px; font-weight: 700; margin-top: 10px;
+    min-height: 24px;
+  }
+
+  .jiggle-btn {
+    background: linear-gradient(135deg, var(--pink), var(--pink-light));
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 16px; font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 6px 25px rgba(255,77,141,0.3);
+    transition: all 0.2s;
+  }
+  .jiggle-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,77,141,0.4); }
+  .jiggle-btn:active { transform: translateY(1px); }
+  .jiggle-output {
+    font-size: 60px;
+    margin-top: 16px;
+    min-height: 80px;
+    transition: all 0.3s;
+  }
+
+  .deco-float {
+    position: fixed;
+    font-size: 30px;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+    animation: float-up 12s linear infinite;
+  }
+  @keyframes float-up {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.08; }
+    90% { opacity: 0.08; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+  }
+
+  .footer {
+    background: var(--navy);
+    color: white;
+    padding: 40px 24px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer-logo { font-size: 40px; margin-bottom: 12px; }
+  .footer h3 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .footer-info {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    max-width: 500px;
+    margin: 16px auto;
+    line-height: 1.8;
+  }
+  .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+  .footer-links a { color: rgba(255,255,255,0.6); font-size: 11px; text-decoration: none; }
+  .footer-links a:hover { color: var(--pink-light); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px; margin-top: 20px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  @media (max-width: 600px) {
+    .header { flex-wrap: wrap; }
+    .header-nav { margin-left: 0; width: 100%; justify-content: center; }
+    .kinki-grid { grid-template-columns: 1fr; }
+    .counter-row { grid-template-columns: 1fr 1fr; }
+  }
+
+  .section { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+  .section.visible { opacity: 1; transform: translateY(0); }
+
+  /* TYPE CLASSIFICATION */
+  .type-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0 0 16px;
+  }
+  @media (max-width: 600px) { .type-grid { grid-template-columns: 1fr; } }
+  .type-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .type-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.08); }
+  .type-card.grape { border-color: #ce93d8; }
+  .type-card.grape:hover { box-shadow: 0 8px 28px rgba(156,39,176,0.15); }
+  .type-card.rocket { border-color: #ef9a9a; }
+  .type-card.rocket:hover { box-shadow: 0 8px 28px rgba(229,57,53,0.15); }
+  .type-card.fuji { border-color: #90caf9; }
+  .type-card.fuji:hover { box-shadow: 0 8px 28px rgba(25,118,210,0.15); }
+  .type-card.dune { border-color: #ffcc80; }
+  .type-card.dune:hover { box-shadow: 0 8px 28px rgba(245,124,0,0.15); }
+  .type-icon-area { text-align: center; margin-bottom: 8px; }
+  .type-name { font-family: 'Dela Gothic One', cursive; font-size: 18px; color: var(--navy); margin-bottom: 2px; }
+  .type-en { font-size: 10px; color: #bbb; letter-spacing: 0.1em; margin-bottom: 10px; font-weight: 700; }
+  .type-desc { font-size: 12.5px; color: #666; margin-bottom: 14px; line-height: 1.7; }
+  .type-stats { margin-bottom: 12px; }
+  .type-stat { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .stat-label { font-size: 10px; font-weight: 900; color: #999; width: 72px; flex-shrink: 0; text-align: right; }
+  .stat-bar { flex: 1; height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden; }
+  .stat-bar span { display: block; height: 100%; border-radius: 5px; transition: width 1s ease; }
+  .type-note { font-size: 11px; color: #aaa; font-style: italic; border-top: 1px dashed #eee; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="deco-float" style="left:5%; animation-delay:0s;">🍈</div>
+<div class="deco-float" style="left:25%; animation-delay:3s;">🍑</div>
+<div class="deco-float" style="left:50%; animation-delay:6s;">🫧</div>
+<div class="deco-float" style="left:75%; animation-delay:9s;">🍈</div>
+<div class="deco-float" style="left:90%; animation-delay:2s;">🫧</div>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    🔴 速報：第42回おっぱい学術集会 演題募集中（締切：おっぱいの日 8/1）&emsp;&emsp;📢 おっぱい白書2024が累計DL数100万件突破（うち98万件が深夜帯）&emsp;&emsp;🏆 本年度おっぱい大賞ノミネート受付開始&emsp;&emsp;⚠️ 「おっぱいAI」倫理委員会が4度目の審議否決&emsp;&emsp;📝 学会誌「Breast Frontier」IF値が0.02から0.03に大躍進&emsp;&emsp;🍈🍈 おっぱいの日（8月1日）記念シンポジウム参加者募集中
+  </div>
+</div>
+
+<div class="header">
+  <div class="logo-mark">🍈</div>
+  <div class="logo-text">
+    <div class="main">日本おっぱい学会</div>
+    <div class="sub">JAPAN SOCIETY OF OPPAI SCIENCE — JSOPS est.昨日</div>
+  </div>
+  <nav class="header-nav">
+    <a href="#">🏠 TOP</a>
+    <a href="#" style="background:var(--pink);color:white;border-radius:20px;">📋 ガイドライン</a>
+    <a href="#">📚 学会誌</a>
+    <a href="#">🎤 学術集会</a>
+    <a href="#">🙋 入会</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <div class="hero-badge">🆕 2025年4月1日 公開</div>
+  <div class="hero-ascii">( . Y . )</div>
+  <h2>Oppai Guideline<br>2025</h2>
+  <div class="hero-subtitle">一般社団法人 日本おっぱい学会 公式診療ガイドライン — 初版</div>
+  <div class="hero-tagline">〜 エビデンスに基づいた、おっぱいとの正しい向き合い方 〜</div>
+  <div class="hero-meta">
+    <span>📄 ISBN: 978-4-OPPAI-2025</span>
+    <span>🏢 発行: JSOPS</span>
+    <span>📊 参考文献: 主にXのアンケート</span>
+    <span>🫡 査読: してない</span>
+  </div>
+  <div class="disclaimer-bar">
+    <strong>⚠️ 重要：</strong>本サイトは完全なるフィクション（というかネタ）です。実在の学会・団体・おっぱいとは一切関係ありません。学術的価値はゼロですが、おっぱいへのリスペクトだけは本物です。
+  </div>
+</div>
+
+<div class="section visible">
+  <div class="counter-row">
+    <div class="counter-box">
+      <div class="counter-num">3,842</div>
+      <div class="counter-label">Googleフォーム回答数</div>
+    </div>
+    <div class="counter-box">
+      <div class="counter-num">24</div>
+      <div class="counter-label">委員数（全員おっぱい星人）</div>
+    </div>
+    <div class="counter-box">
+      <div class="counter-num">0</div>
+      <div class="counter-label">PubMedで使えた論文数</div>
+    </div>
+    <div class="counter-box">
+      <div class="counter-num">∞</div>
+      <div class="counter-label">おっぱいへの愛</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 1</span>
+  <h2 class="section-title">おっぱいの大きさは正義か？</h2>
+  <p class="section-lead">人類最古にして最大の論争に、ついに学会が回答を出す。</p>
+  <div class="cq">
+    <div class="cq-num">CQ 1</div>
+    <div class="cq-question">おっぱいの「大きさ」は鑑賞満足度に影響を与えるか？</div>
+    <div class="answer-box">
+      <div class="answer-label">推奨 ❶ <span class="evidence-pill ev-b">エビデンス B</span></div>
+      <div class="answer-text">大きさと満足度に有意な相関を認めない。サイズ至上主義は科学的根拠を欠く。<br>おっぱいは存在そのものが尊い。</div>
+    </div>
+    <div class="vote-bar-wrap">
+      <div class="vote-bar-label">委員投票（n=24）</div>
+      <div class="vote-bar">
+        <div class="vb-yes" style="width:79%;">賛成 79%</div>
+        <div class="vb-no" style="width:13%;">反対 13%</div>
+        <div class="vb-abs" style="width:8%;">棄権</div>
+      </div>
+    </div>
+    <p class="note">※ 反対票の3名は全員巨乳愛好家。利益相反により結果に影響した可能性がある。</p>
+  </div>
+  <div class="highlight-box">
+    <div class="big-emoji">🍈🤝🫐</div>
+    <div class="big-text">全てのおっぱいは平等である</div>
+    <p style="font-size:13px;color:#999;">— JSOPS 基本理念（第1条）</p>
+  </div>
+  <div class="column">
+    <div class="column-head">📝 COLUMN：「貧乳は正義か？」— 未解決のグランドチャレンジ</div>
+    <p>「貧乳はステータスだ、希少価値だ」という言説は2000年代にネットで爆発的に拡散。本学会では「全おっぱい平等宣言」を採択しているが、この命題の科学的検証は<strong>ノーベル平和賞級の課題</strong>として位置づけている。なお、委員の一人は「平たく言えば、平らでもいい」と発言し、その場が凍りついた。</p>
+  </div>
+
+  <!-- CLASSIFICATION -->
+  <div class="card" style="padding:0;overflow:hidden;">
+    <div style="background:linear-gradient(135deg,#7b1fa2,#ce93d8);padding:16px 24px;">
+      <div style="font-size:10px;font-weight:900;color:rgba(255,255,255,0.7);letter-spacing:0.15em;">SPECIAL COLUMN</div>
+      <div style="font-family:'Dela Gothic One',cursive;font-size:20px;color:white;">おっぱい形状分類 2025</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);">ICO-11（International Classification of Oppai）準拠 ※準拠したつもり</div>
+    </div>
+    <div style="padding:24px;">
+      <p style="font-size:13px;color:#888;margin-bottom:20px;">本学会では、従来の曖昧な分類体系を廃し、4類型による新分類を提唱する。<br>各類型はフィールドワーク（温泉 n=不明、グラビア誌 n=多数、脳内 n=∞）に基づく。</p>
+
+      <div class="type-grid">
+        <!-- 巨峰型 -->
+        <div class="type-card grape">
+          <div class="type-icon-area">
+            <svg viewBox="0 0 120 100" width="120" height="100">
+              <ellipse cx="38" cy="52" rx="30" ry="34" fill="#d4a5e0" opacity="0.5"/>
+              <ellipse cx="82" cy="52" rx="30" ry="34" fill="#d4a5e0" opacity="0.5"/>
+              <ellipse cx="38" cy="50" rx="28" ry="32" fill="url(#gGrape1)"/>
+              <ellipse cx="82" cy="50" rx="28" ry="32" fill="url(#gGrape2)"/>
+              <defs>
+                <radialGradient id="gGrape1" cx="40%" cy="35%"><stop offset="0%" stop-color="#f3e5f5"/><stop offset="100%" stop-color="#ce93d8"/></radialGradient>
+                <radialGradient id="gGrape2" cx="40%" cy="35%"><stop offset="0%" stop-color="#f3e5f5"/><stop offset="100%" stop-color="#ce93d8"/></radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="type-name">🍇 巨峰型</div>
+          <div class="type-en">Type KYOHO</div>
+          <div class="type-desc">ぷるんと丸みを帯び、重力に逆らう存在感。熟した果実のような豊満さが特徴。「持てば分かる」との委員コメントに対し、倫理委員会から厳重注意。</div>
+          <div class="type-stats">
+            <div class="type-stat"><span class="stat-label">豊満度</span><span class="stat-bar"><span style="width:95%;background:#9c27b0;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">揺れやすさ</span><span class="stat-bar"><span style="width:88%;background:#9c27b0;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">ニット映え</span><span class="stat-bar"><span style="width:100%;background:#9c27b0;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">ステルス性</span><span class="stat-bar"><span style="width:8%;background:#9c27b0;"></span></span></div>
+          </div>
+          <div class="type-note">📝 巨峰の旬は8〜9月。おっぱいの旬は年中。</div>
+        </div>
+
+        <!-- ロケット型 -->
+        <div class="type-card rocket">
+          <div class="type-icon-area">
+            <svg viewBox="0 0 120 100" width="120" height="100">
+              <ellipse cx="38" cy="55" rx="22" ry="36" fill="#ffcdd2" opacity="0.5"/>
+              <ellipse cx="82" cy="55" rx="22" ry="36" fill="#ffcdd2" opacity="0.5"/>
+              <ellipse cx="38" cy="53" rx="20" ry="34" fill="url(#gRocket1)"/>
+              <ellipse cx="82" cy="53" rx="20" ry="34" fill="url(#gRocket2)"/>
+              <defs>
+                <radialGradient id="gRocket1" cx="45%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ef9a9a"/></radialGradient>
+                <radialGradient id="gRocket2" cx="45%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ef9a9a"/></radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="type-name">🚀 ロケット型</div>
+          <div class="type-en">Type ROCKET</div>
+          <div class="type-desc">前方への推進力を感じさせるシャープなフォルム。物理学的には「空気抵抗最小化形状」。NASAの論文を引用しようとしたが、さすがに怒られると判断し断念。</div>
+          <div class="type-stats">
+            <div class="type-stat"><span class="stat-label">推進力</span><span class="stat-bar"><span style="width:92%;background:#e53935;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">空力性能</span><span class="stat-bar"><span style="width:97%;background:#e53935;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">Tシャツ映え</span><span class="stat-bar"><span style="width:90%;background:#e53935;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">ステルス性</span><span class="stat-bar"><span style="width:15%;background:#e53935;"></span></span></div>
+          </div>
+          <div class="type-note">📝 某委員「ロケットおっぱいは夢と希望を乗せて飛ぶ」（議事録より）</div>
+        </div>
+
+        <!-- 富士山型 -->
+        <div class="type-card fuji">
+          <div class="type-icon-area">
+            <svg viewBox="0 0 120 100" width="120" height="100">
+              <path d="M8,80 Q20,20 38,18 Q56,20 68,80 Z" fill="#bbdefb" opacity="0.4"/>
+              <path d="M52,80 Q64,20 82,18 Q100,20 112,80 Z" fill="#bbdefb" opacity="0.4"/>
+              <path d="M10,78 Q22,22 38,20 Q54,22 66,78 Z" fill="url(#gFuji1)"/>
+              <path d="M54,78 Q66,22 82,20 Q98,22 110,78 Z" fill="url(#gFuji2)"/>
+              <path d="M28,28 Q38,16 48,28" fill="white" opacity="0.6"/>
+              <path d="M72,28 Q82,16 92,28" fill="white" opacity="0.6"/>
+              <defs>
+                <linearGradient id="gFuji1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e3f2fd"/><stop offset="100%" stop-color="#64b5f6"/></linearGradient>
+                <linearGradient id="gFuji2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e3f2fd"/><stop offset="100%" stop-color="#64b5f6"/></linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="type-name">🗻 富士山型</div>
+          <div class="type-en">Type FUJIYAMA</div>
+          <div class="type-desc">頂上に向かって美しく収束する日本の誇り。なだらかな稜線が見る者に「霊峰」を感じさせる。学会では「一度は拝みたい」がコンセンサス。ご来光（谷間）も格別。</div>
+          <div class="type-stats">
+            <div class="type-stat"><span class="stat-label">神々しさ</span><span class="stat-bar"><span style="width:100%;background:#1976d2;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">左右対称美</span><span class="stat-bar"><span style="width:94%;background:#1976d2;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">拝みたさ</span><span class="stat-bar"><span style="width:100%;background:#1976d2;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">登頂難易度</span><span class="stat-bar"><span style="width:75%;background:#1976d2;"></span></span></div>
+          </div>
+          <div class="type-note">📝 世界遺産登録を目指す会が非公式に発足（会員3名）。</div>
+        </div>
+
+        <!-- 砂丘型 -->
+        <div class="type-card dune">
+          <div class="type-icon-area">
+            <svg viewBox="0 0 120 100" width="120" height="100">
+              <path d="M0,75 Q15,55 30,52 Q45,48 60,55 Q75,48 90,52 Q105,55 120,75 Z" fill="#ffe0b2" opacity="0.4"/>
+              <path d="M0,73 Q15,57 30,54 Q45,50 60,57 Q75,50 90,54 Q105,57 120,73 Z" fill="url(#gDune)"/>
+              <circle cx="95" cy="25" r="14" fill="#fff9c4" opacity="0.6"/>
+              <defs>
+                <linearGradient id="gDune" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff8e1"/><stop offset="100%" stop-color="#ffcc80"/></linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="type-name">🏜️ 砂丘型</div>
+          <div class="type-en">Type SAND DUNE</div>
+          <div class="type-desc">広大で穏やかな起伏。控えめながら風が吹けば揺れる奥ゆかしさ。「何もないように見えて、実は豊かな生態系」と委員が詩的にコメント。鳥取県から感謝状が届いた（嘘）。</div>
+          <div class="type-stats">
+            <div class="type-stat"><span class="stat-label">奥ゆかしさ</span><span class="stat-bar"><span style="width:100%;background:#f57c00;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">想像力要求度</span><span class="stat-bar"><span style="width:95%;background:#f57c00;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">風の影響</span><span class="stat-bar"><span style="width:60%;background:#f57c00;"></span></span></div>
+            <div class="type-stat"><span class="stat-label">ステルス性</span><span class="stat-bar"><span style="width:98%;background:#f57c00;"></span></span></div>
+          </div>
+          <div class="type-note">📝 「貧乳は正義」派の聖地。巡礼者が絶えない。</div>
+        </div>
+      </div>
+
+      <div class="warning-box" style="margin-top:20px;margin-bottom:0;">
+        <div class="wb-title">⚠️ 分類に関する重要な注意</div>
+        <p style="font-size:13px;">上記分類はあくまで学術的便宜のためであり、いかなる類型にも優劣はない。「うちの彼女は何型？」等の質問をパートナーに行うことは<strong>表3-1の絶対禁忌に準ずる行為</strong>であり、本学会は一切の責任を負わない。なお、複合型（例：富士山型の裾野に砂丘が広がるタイプ）の分類については次期改訂で検討予定。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 2</span>
+  <h2 class="section-title">チラリズム vs 直接鑑賞</h2>
+  <p class="section-lead">鑑賞メソッドの最適化について、大規模観察研究の結果を報告する。</p>
+  <div class="cq">
+    <div class="cq-num">CQ 2</div>
+    <div class="cq-question">おっぱい鑑賞において「チラリズム」と「直接鑑賞」、どちらが推奨されるか？</div>
+    <div class="answer-box">
+      <div class="answer-label">推奨 ❶（強い推奨） <span class="evidence-pill ev-a">エビデンス A</span></div>
+      <div class="answer-text">チラリズムを強く推奨する。心拍数上昇率 1.8倍、記憶定着率 2.4倍、幸福度 3.1倍。「見えそうで見えない」が人類の想像力を最大化する。</div>
+    </div>
+    <div class="vote-bar-wrap">
+      <div class="vote-bar-label">委員投票（n=24）</div>
+      <div class="vote-bar">
+        <div class="vb-yes" style="width:92%;">賛成 92% 🎉</div>
+        <div class="vb-no" style="width:4%;">4%</div>
+        <div class="vb-abs" style="width:4%;">4%</div>
+      </div>
+    </div>
+    <p class="note">※ 本CQはガイドライン中もっとも高いコンセンサスを得た。「チラリズムの前に人類は無力」との付帯意見あり。</p>
+  </div>
+  <div class="card">
+    <h4 style="font-weight:900;margin-bottom:12px;color:var(--navy);">📊 図2-1. 鑑賞メソッド別 感動度比較</h4>
+    <div class="bar-chart">
+      <div class="bar-col">
+        <div class="bar-val">94</div>
+        <div class="bar" style="height:160px;background:linear-gradient(to top, var(--pink), var(--pink-light));"></div>
+        <div class="bar-label">チラ<br>リズム</div>
+      </div>
+      <div class="bar-col">
+        <div class="bar-val">71</div>
+        <div class="bar" style="height:120px;background:linear-gradient(to top, var(--peach), #ffd6c9);"></div>
+        <div class="bar-label">直接<br>鑑賞</div>
+      </div>
+      <div class="bar-col">
+        <div class="bar-val">88</div>
+        <div class="bar" style="height:148px;background:linear-gradient(to top, #ce93d8, #e1bee7);"></div>
+        <div class="bar-label">ニット<br>越し</div>
+      </div>
+      <div class="bar-col">
+        <div class="bar-val">52</div>
+        <div class="bar" style="height:88px;background:linear-gradient(to top, #90caf9, #bbdefb);"></div>
+        <div class="bar-label">ダウン<br>越し</div>
+      </div>
+      <div class="bar-col">
+        <div class="bar-val">100</div>
+        <div class="bar" style="height:170px;background:linear-gradient(to top, var(--gold), #ffe082);"></div>
+        <div class="bar-label">想像<br>のみ</div>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;">※「想像のみ」が最高値を記録。委員長「人類の脳は最高のグラフィックエンジン」</p>
+  </div>
+  <div class="flow-wrap">
+    <h4>図2-2. 推奨鑑賞アルゴリズム ver.2025</h4>
+    <div class="flow-step fs-start">👀 おっぱいを認知</div>
+    <div class="flow-arrow">⬇️</div>
+    <div class="flow-step fs-check">⚖️ 同意のある状況か？</div>
+    <div class="flow-arrow">⬇️ YES &emsp;&emsp;&emsp;&emsp; ➡️ NO</div>
+    <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;">
+      <div>
+        <div class="flow-step fs-do">🫣 チラ見（3秒厳守）</div>
+        <div class="flow-arrow">⬇️</div>
+        <div class="flow-step fs-do">🧘 感動を内面で処理</div>
+        <div class="flow-arrow">⬇️</div>
+        <div class="flow-step fs-end">🚶 日常に復帰</div>
+      </div>
+      <div>
+        <div class="flow-step fs-danger">🚨 鑑賞中止</div>
+        <div class="flow-arrow">⬇️</div>
+        <div class="flow-step fs-danger">🪞 己を見つめ直す</div>
+        <div class="flow-arrow">⬇️</div>
+        <div class="flow-step fs-danger">📿 反省</div>
+      </div>
+    </div>
+  </div>
+  <div class="warning-box">
+    <div class="wb-title">🚨 3秒ルールについての重大補足</div>
+    <p style="font-size:13px;">「3秒ルール」を超える凝視は社会的有害行為である。なお<strong>「心の中の3秒」は無効</strong>である。物理的な3秒を厳守すること。（第39回学術集会で「俺の3秒は濃いんだ」と主張した会員の除名処分を受けて補足。）</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 3</span>
+  <h2 class="section-title">パートナーへの対応</h2>
+  <p class="section-lead">本章は委員たちの血涙の実体験に基づく。</p>
+  <div class="cq">
+    <div class="cq-num">CQ 5</div>
+    <div class="cq-question">パートナーから「私のおっぱいどう思う？」と聞かれた場合の推奨回答は？</div>
+    <div class="answer-box">
+      <div class="answer-label">推奨 ❶（最強の推奨） <span class="evidence-pill ev-a">エビデンス A（実体験）</span></div>
+      <div class="answer-text">「世界で一番好き」と即答せよ。<br>回答遅延 1.5秒で関係崩壊リスクが急騰（p &lt; 0.001）。</div>
+    </div>
+    <div class="vote-bar-wrap">
+      <div class="vote-bar-label">委員投票（n=24）</div>
+      <div class="vote-bar">
+        <div class="vb-yes" style="width:100%;">✨ 全会一致 100% ✨</div>
+      </div>
+    </div>
+    <p class="note-red">※ 本CQのみ「全会一致」で可決。委員の目が潤んでいたとの議事録記載あり。</p>
+  </div>
+  <div class="card">
+    <h4 style="font-weight:900;margin-bottom:12px;color:var(--navy);">表3-1. 回答パターン別リスク評価</h4>
+    <table class="fun-table">
+      <thead>
+        <tr><th>回答</th><th>満足度</th><th>生存率</th><th>判定</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>「世界で一番好き」</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>99.9%</td>
+          <td style="color:#4caf50;font-weight:900;">◎ 強く推奨</td>
+        </tr>
+        <tr>
+          <td>「かわいいよ」</td>
+          <td>⭐⭐⭐⭐☆</td>
+          <td>95%</td>
+          <td style="color:#ff9800;font-weight:900;">○ 推奨</td>
+        </tr>
+        <tr>
+          <td>「うん、いいんじゃない」</td>
+          <td>⭐⭐☆☆☆</td>
+          <td>60%</td>
+          <td style="color:#e65100;font-weight:900;">△ 非推奨</td>
+        </tr>
+        <tr class="danger-row">
+          <td>「普通じゃない？」</td>
+          <td>⭐☆☆☆☆</td>
+          <td>12%</td>
+          <td style="color:var(--red);font-weight:900;">✕ 禁忌</td>
+        </tr>
+        <tr class="death-row">
+          <td>「前の彼女のほうが…」</td>
+          <td>計測不能</td>
+          <td><strong>0%（生存例なし）</strong></td>
+          <td style="color:var(--red);font-weight:900;">☠️ 絶対禁忌</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">※「前の彼女のほうが…」を検証した委員は現在行方不明。</p>
+  </div>
+
+  <div class="quiz-box" id="quiz1">
+    <h4>🧪 理解度チェック</h4>
+    <p style="font-size:14px;font-weight:700;margin-bottom:12px;">パートナーに「私のおっぱいどう思う？」と聞かれました。正しい回答は？</p>
+    <div class="quiz-btns">
+      <button class="quiz-btn" onclick="checkQuiz(this, false)">普通かな</button>
+      <button class="quiz-btn" onclick="checkQuiz(this, true)">世界一好き！</button>
+      <button class="quiz-btn" onclick="checkQuiz(this, false)">え、急に何？</button>
+      <button class="quiz-btn" onclick="checkQuiz(this, false)">測って比較しようか</button>
+    </div>
+    <div class="quiz-result" id="quizResult1"></div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 4</span>
+  <h2 class="section-title">おっぱい可視性の季節変動</h2>
+  <p class="section-lead">OVI（Oppai Visibility Index）四季報告</p>
+  <div class="card">
+    <table class="fun-table">
+      <thead>
+        <tr><th>季節</th><th>OVI</th><th>主要因</th><th>攻略難度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🌸 春</td><td><strong>62</strong></td><td>薄着への移行期。カーディガン前開き問題。</td><td>⭐⭐⭐☆☆</td></tr>
+        <tr><td>🌊 夏</td><td><strong>94</strong></td><td>水着・薄着の最大値。情報過多で脳が処理落ち。</td><td>⭐☆☆☆☆</td></tr>
+        <tr><td>🍂 秋</td><td><strong>48</strong></td><td>「ニットおっぱい」の季節。着衣の魔術が猛威。</td><td>⭐⭐⭐⭐☆</td></tr>
+        <tr><td>⛄ 冬</td><td><strong>23</strong></td><td>ダウンで完全ステルス。想像力だけが頼り。</td><td>⭐⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="column">
+    <div class="column-head">🧶 特別寄稿：「ニットおっぱい」の学術的考察</div>
+    <p>ニットおっぱいは露出ゼロにもかかわらず、水着と同等以上の鑑賞満足度を叩き出す。これを<strong>「想像力補完効果（ICE: Imagination Compensation Effect）」</strong>と呼ぶ。特にタートルネック着用時に最大値を記録。委員長は「ニットとは布ではない、ロマンだ」と学会誌の巻頭言で述べている。</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 5</span>
+  <h2 class="section-title">おっぱいと社会的共存</h2>
+  <p class="section-lead">いつ、どこで、誰に「おっぱい」と言っていいのか問題。</p>
+  <div class="cq">
+    <div class="cq-num">CQ 7</div>
+    <div class="cq-question">「おっぱい星人」であることをカミングアウトする最適タイミングは？</div>
+    <div class="answer-box">
+      <div class="answer-label">推奨 ❷ <span class="evidence-pill ev-c">エビデンス C</span></div>
+      <div class="answer-text">交際3ヶ月以降、信頼関係構築後を推奨。初対面での宣言は関係構築失敗リスクが4.2倍（95%CI: 2.8-6.3）。合コンの自己紹介での宣言は論外。</div>
+    </div>
+  </div>
+  <div class="warning-box">
+    <div class="wb-title">🚫 絶対的禁忌シチュエーション（全員一致・議論の余地なし）</div>
+    <div class="kinki-grid">
+      <div class="kinki-item death"><div class="ki-icon">👔</div><div>就職面接</div></div>
+      <div class="kinki-item death"><div class="ki-icon">💒</div><div>結婚式のスピーチ</div></div>
+      <div class="kinki-item death"><div class="ki-icon">🏫</div><div>PTAの集まり</div></div>
+      <div class="kinki-item death"><div class="ki-icon">⚖️</div><div>裁判所</div></div>
+      <div class="kinki-item death"><div class="ki-icon">🪦</div><div>義実家の法事</div></div>
+      <div class="kinki-item death"><div class="ki-icon">🏥</div><div>健康診断の問診</div></div>
+    </div>
+    <p class="note">※ 上記で実際にやらかした委員が複数名存在するが、匿名性保護のため詳細は割愛。</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">INTERACTIVE</span>
+  <h2 class="section-title">おっぱいシミュレーター</h2>
+  <p class="section-lead">学術的な揺れの再現。これは研究です。</p>
+  <div class="card" style="text-align:center;">
+    <div class="jiggle-output" id="jiggleArea">( . Y . )</div>
+    <button class="jiggle-btn" id="jiggleBtn" onclick="doJiggle()">🫨 揺らす（学術目的）</button>
+    <p class="note" style="margin-top:12px;">※ 本機能は揺れ特性の物理学的研究を目的としています（ということにしてください）</p>
+    <div id="jiggleCount" style="font-size:12px;color:#ccc;margin-top:8px;"></div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">Chapter 6</span>
+  <h2 class="section-title">今後の研究課題</h2>
+  <p class="section-lead">本学会が全力で取り組む、人類の未解決問題。</p>
+  <div class="card">
+    <table class="fun-table">
+      <thead>
+        <tr><th>研究テーマ</th><th>現状</th><th>優先度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>おっぱい派 vs おしり派の終戦</strong></td><td>数十年来未解決。ノーベル平和賞級。</td><td>🔴🔴🔴</td></tr>
+        <tr><td><strong>揺れと感動の物理学的定量化</strong></td><td>流体力学の専門家を招聘予定</td><td>🔴🔴</td></tr>
+        <tr><td><strong>AIおっぱい好適度予測モデル</strong></td><td>倫理委員会が4回否決（5回目挑戦中）</td><td>🔴🔴</td></tr>
+        <tr><td><strong>おっぱいが世界平和に寄与する可能性</strong></td><td>仮説段階。しかし委員の信念は岩より固い。</td><td>🟡🟡</td></tr>
+        <tr><td><strong>猫の腹のふくらみとの比較認知研究</strong></td><td>被験者が猫に夢中になり実験3回中断</td><td>🟢</td></tr>
+        <tr><td><strong>おっぱいマンガにおける物理法則の逸脱度</strong></td><td>「むしろ新しい物理学では」との声あり</td><td>🟡</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <div class="big-emoji">💰</div>
+    <div class="big-text">おっぱい研究グラント（ORG）新設</div>
+    <p style="font-size:13px;color:#999;">年間助成総額：1,000万円（財源：委員長のポケットマネー）<br>応募資格：おっぱいへの純粋な学術的関心を持つ全ての生命体</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="section-tag">付録</span>
+  <h2 class="section-title">利益相反・免責・その他</h2>
+  <div class="card">
+    <h4 style="font-weight:900;color:var(--navy);margin-bottom:12px;">👨‍🔬 ガイドライン作成委員会</h4>
+    <p style="font-size:13px;"><strong>委員長：</strong>乳山 豊（架空大学大学院おっぱい科学研究科 教授・おっぱい学博士）</p>
+    <p style="font-size:13px;"><strong>副委員長：</strong>胸田 恵（架空女子大学 ジェンダーとおっぱい研究センター長）</p>
+    <p style="font-size:13px;"><strong>統計担当：</strong>巨泉 太郎（名前のせいで断れなかった）</p>
+    <div style="height:1px;background:#eee;margin:16px 0;"></div>
+    <h4 style="font-weight:900;color:var(--navy);margin-bottom:8px;">⚠️ 利益相反</h4>
+    <p style="font-size:13px;">委員24名中22名が「おっぱい星人」を自認。深刻な利益相反の存在を認めるが、「おっぱいへの愛は科学的客観性を損なわない、むしろ強化する」との立場で全員が一致した。残り2名は「おしり派だが、おっぱいも嫌いではない」とのこと。</p>
+    <div style="height:1px;background:#eee;margin:16px 0;"></div>
+    <h4 style="font-weight:900;color:var(--navy);margin-bottom:8px;">🤝 外部評価</h4>
+    <p style="font-size:13px;">日本おしり学会（JSOBS）に外部評価を依頼。<strong>「おっぱいのガイドラインをおしりの専門家が評価するのは学術的に不適切」</strong>との理由で丁重に断られた。代わりに「いつか合同シンポジウムやりましょう」と提案された。テーマ案：「上半身 vs 下半身：不毛な争いに終止符を」。</p>
+    <div style="height:1px;background:#eee;margin:16px 0;"></div>
+    <div class="warning-box" style="margin:0;">
+      <div class="wb-title">📜 免責事項（真面目）</div>
+      <p style="font-size:12px;">本ガイドラインはユーモア作品であり学術的価値はありません。実在の学会・団体・人物・おっぱいとは無関係です。おっぱいに関する真の医学的知見は医療機関にご相談ください。本ガイドラインに従った結果生じた事態（パートナーとの修羅場、友人の喪失、社会的信用の失墜等）について当学会は一切の責任を負いません。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-logo">🍈</div>
+  <h3>日本おっぱい学会 — JSOPS</h3>
+  <p style="font-size:11px;color:rgba(255,255,255,0.4);">Japan Society of Oppai Science</p>
+  <div class="footer-info">
+    〒000-0000 東京都千代田区乳が関1-1-1 おっぱいビル8F（8 = おっぱいの日）<br>
+    TEL: 0120-OPP-PAI（通話料無料・おっぱいの悩み24時間対応）<br>
+    E-mail: info@oppai-gakkai.ac.jp<br>
+    学会誌：「Breast Frontier」（IF: 0.03 → 前年比50%増！すごい！）
+  </div>
+  <div class="footer-links">
+    <a href="#">理事長挨拶</a>
+    <a href="#">定款・規約</a>
+    <a href="#">おっぱい白書 2024</a>
+    <a href="#">おっぱい相談窓口</a>
+    <a href="#">プライバシーポリシー（おっぱいのプライバシーも守ります）</a>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 JSOPS. All rights reserved. No actual oppai were harmed in the making of this guideline.<br>
+    本ガイドラインの無断転載を禁じますが、笑いの共有は強く推奨します。
+  </div>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.section').forEach(s => observer.observe(s));
+
+function checkQuiz(btn, correct) {
+  const box = btn.closest('.quiz-box');
+  const result = box.querySelector('.quiz-result');
+  box.querySelectorAll('.quiz-btn').forEach(b => {
+    b.disabled = true;
+    b.style.opacity = '0.5';
+  });
+  if (correct) {
+    btn.classList.add('correct');
+    btn.style.opacity = '1';
+    result.innerHTML = '🎉 正解！ あなたのパートナーは幸せ者です。学会認定おっぱい紳士の称号を授与します。';
+    result.style.color = '#4caf50';
+  } else {
+    btn.classList.add('wrong');
+    btn.style.opacity = '1';
+    result.innerHTML = '💀 不正解。その回答は致命的です。ガイドラインをもう一度最初からお読みください（命に関わります）。';
+    result.style.color = '#e53935';
+  }
+}
+
+let jCount = 0;
+const jiggleFrames = [
+  '( . Y . )',
+  '(  .Y.  )',
+  '( .Y.  )',
+  '(  .Y. )',
+  '( . Y . )',
+  '(. Y  .)',
+  '(  .Y.  )',
+  '( . Y . )',
+];
+function doJiggle() {
+  jCount++;
+  const area = document.getElementById('jiggleArea');
+  const counter = document.getElementById('jiggleCount');
+  let i = 0;
+  const interval = setInterval(() => {
+    area.textContent = jiggleFrames[i % jiggleFrames.length];
+    area.style.transform = 'rotate('+Math.sin(i*0.8)*3+'deg) scale('+(1 + Math.sin(i*0.5)*0.05)+')';
+    i++;
+    if (i > 16) {
+      clearInterval(interval);
+      area.textContent = '( . Y . )';
+      area.style.transform = 'none';
+    }
+  }, 60);
+  let msg = '';
+  if (jCount === 1) msg = '学術的な揺れを観測しました。';
+  else if (jCount === 3) msg = '熱心ですね。これも研究のためですよね？';
+  else if (jCount === 5) msg = '…本当に研究目的ですか？';
+  else if (jCount === 10) msg = '通報しました（嘘です）';
+  else if (jCount === 20) msg = 'あなたは立派なおっぱい物理学者です。';
+  else if (jCount >= 30) msg = 'もう'+jCount+'回です。学会の正会員に推薦します。';
+  else msg = '観測回数: '+jCount;
+  counter.textContent = msg;
+}
+</script>
+</body>
+</html>
